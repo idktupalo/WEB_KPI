@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tour de France</title>
+    <link rel="icon" href="images/icon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img class="header__logo" src="images/france.svg" alt="logo" />
+          <h3 class="header__text">
+            tour de
+            <span>France</span>
+          </h3>
+          <nav class="menu">
+            <button class="menu__btn"></button>
+            <ul class="menu__list">
+              <li class="menu__list-items">
+                <a href="" class="menu__list-link">About</a>
+              </li>
+              <li class="menu__list-items">
+                <a href="#login__id" class="menu__list-link">Sign Up</a>
+              </li>
+              <li class="menu__list-items">
+                <a href="#log_wrap" class="menu__list-link">Registration</a>
+              </li>
+              <li class="menu__list-items">
+                <a href="#profile__id" class="menu__list-link">Profile</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="about">
+      <div class="about__wrapper">
+        <div class="about__content">
+          <h1 class="about__title">
+            All reviews
+            <span>about France cities</span>
+          </h1>
+          <p class="about__text">
+            France is the first in the list of largest tourist destinations in
+            the world. The tourist attraction of France is due to the large
+            number of attractions for all tastes, the variety of landscapes,
+            long lines of ocean and sea coast, the richness of historical and
+            artistic heritage, temperate climate and ease of transport access,
+            as well as proper tourist service.
+          </p>
+        </div>
+        <div class="about__slider">
+          <div class="about__slider-item">
+            <img
+              class="about__slider-images"
+              src="images/slider-4.jpg"
+              alt="slider-item1"
+            />
+          </div>
+          <div class="about__slider-item">
+            <img
+              class="about__slider-images"
+              src="images/slider-2.jpg"
+              alt="slider-item2"
+            />
+          </div>
+          <div class="about__slider-item">
+            <img
+              class="about__slider-images"
+              src="images/slider-3.jpg"
+              alt="slider-item3"
+            />
+          </div>
+          <div class="about__slider-item">
+            <img
+              class="about__slider-images"
+              src="images/slider-1.jpg"
+              alt="slider-item4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="login" id="login__id">
+      <div class="login__wrapper" id="log_wrap">
+        <div class="sign__in">
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form1Example1 logEmail" class="form-control" />
+              <label class="form-label" for="form1Example1">Email address</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form1Example2 logPassword" class="form-control" />
+              <label class="form-label" for="form1Example2">Password</label>
+            </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <!-- <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="form1Example3"
+                    checked
+                  />
+                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                </div> -->
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+          </form>
+        </div>
+        <div class="register" id= "register">
+          <form>
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-4">
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form3Example1 fName" class="form-control reg-firstName" />
+                  <label class="form-label" for="form3Example1">First name</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline">
+                  <input type="text" id="form3Example2 sName" class="form-control reg-lastName" />
+                  <label class="form-label" for="form3Example2">Last name</label>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form3Example3 reg-email" class="form-control reg-email" />
+              <label class="form-label" for="form3Example3">Email address</label>
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form3Example4 u_password" class="form-control reg-password" />
+              <label class="form-label" for="form3Example4">Password</label>
+            </div>
+          
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio1"
+                  value="option1"
+                />
+                <label class="form-check-label" for="inlineRadio1">Men</label>
+              </div>
+              
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="inlineRadioOptions"
+                  id="inlineRadio2"
+                  value="option2"
+                />
+                <label class="form-check-label" for="inlineRadio2">Women</label>
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+          
+            
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="profile" id="profile__id">
+      <div class="page-content page-container" id="page-content">
+        <div class="padding d-flex justify-content-center">
+          <div class="row container-fluid d-flex justify-content-center">
+            <div class="col-xl-6 col-md-12">
+              <div class="card user-card-full">
+                <div class="row m-l-0 m-r-0">
+                  <div class="col-sm-4 bg-c-lite-green user-profile">
+                    <div class="card-block text-center text-white">
+                      <div class="m-b-25">
+                        <img
+                          src="https://img.icons8.com/bubbles/100/000000/user.png"
+                          class="img-radius"
+                          alt="User-Profile-Image"
+                        />
+                      </div>
+                      <h6 class="f-w-600 profile-name">Hembo Tingor</h6>
+                      <p>Web Designer</p>
+                      <i
+                        class="mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-block">
+                      <h6 class="m-b-20 p-b-5 b-b-default f-w-600">
+                        Information
+                      </h6>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="m-b-10 f-w-600">Email</p>
+                          <h6 class="text-muted f-w-400 profile-email">------</h6>
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="m-b-10 f-w-600">Phone</p>
+                          <h6 class="text-muted f-w-400 ">98979989898</h6>
+                        </div>
+                      </div>
+                      <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">
+                        Projects
+                      </h6>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <p class="m-b-10 f-w-600">Recent</p>
+                          <h6 class="text-muted f-w-400">Sam Disuja</h6>
+                        </div>
+                        <div class="col-sm-6">
+                          <p class="m-b-10 f-w-600">Most Viewed</p>
+                          <h6 class="text-muted f-w-400">Dinoter husainm</h6>
+                        </div>
+                      </div>
+                      <ul class="social-link list-unstyled m-t-40 m-b-10">
+                        <li>
+                          <a
+                            href="#!"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="facebook"
+                            data-abc="true"
+                            ><i
+                              class="mdi mdi-facebook feather icon-facebook facebook"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#!"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="twitter"
+                            data-abc="true"
+                            ><i
+                              class="mdi mdi-twitter feather icon-twitter twitter"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="#!"
+                            data-toggle="tooltip"
+                            data-placement="bottom"
+                            title=""
+                            data-original-title="instagram"
+                            data-abc="true"
+                            ><i
+                              class="mdi mdi-instagram feather icon-instagram instagram"
+                              aria-hidden="true"
+                            ></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a
+                class="footer__list-link"
+                href="https://www.instagram.com/explore/tags/france/"
+                target="_blank"
+              >
+                <img
+                  class="footer__list-image"
+                  src="images/instagram.svg"
+                  alt="link-1"
+                />
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a
+                class="footer__list-link"
+                href="https://www.youtube.com/watch?v=2N7l6SSKeds&ab_channel=touropia"
+                target="_blank"
+              >
+                <img
+                  class="footer__list-image"
+                  src="images/youtube.svg"
+                  alt="link-2"
+                />
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a
+                class="footer__list-link"
+                href="https://www.tiktok.com/@tiktok_france?lang=en"
+                target="_blank"
+              >
+                <img
+                  class="footer__list-image"
+                  src="images/tik-tok.svg"
+                  alt="link-3"
+                />
+              </a>
+            </li>
+            <li class="footer__list-item">
+              <a
+                class="footer__list-link"
+                href="https://twitter.com/twitterfrance?lang=en"
+                target="_blank"
+              >
+                <img
+                  class="footer__list-image"
+                  src="images/twitter.svg"
+                  alt="link-4"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/Controller/controller.js"></script>
+    <script src="js/Model/model.js"></script>
+    <script src="js/View/view.js"></script>
+    <script src="js/base.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
